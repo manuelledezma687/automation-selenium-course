@@ -1,7 +1,7 @@
 from pages.actions.register_actions import RegisterActions
 
-def test_fill_form(browser):
-    register = RegisterActions(browser)
+def test_fill_form(driver):
+    register = RegisterActions(driver)
     register.load("https://testertestarudo.com/sandbox-para-pruebas-automatizadas/")
     register.type_user("Manuel")
     register.type_email("email@testertestarudo.com")
