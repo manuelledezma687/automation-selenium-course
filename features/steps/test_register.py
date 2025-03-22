@@ -1,8 +1,11 @@
 from pytest_bdd import given, then, when, scenario
+import allure
 from pages.actions.register_actions import RegisterActions
 
 
 @scenario("register.feature","Register User with valid credentials")
+@allure.suite("Landing Page")
+@allure.title("Registration from User")
 def test_register_user():
     pass
 
