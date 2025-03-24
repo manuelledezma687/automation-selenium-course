@@ -25,14 +25,14 @@ class BaseActions:
         if user:
             user.click()
         else:
-            raise Exception("Can´t click on the element}")
+            raise Exception("Can´t click on the element")
 
     def type_info(self, by_locator, keyword):
         user = self._wait_for_element(by_locator)
         if user:
             user.send_keys(keyword)
         else:
-            raise Exception("Can´t find the element}")
+            raise Exception("Can´t find the element")
 
     def is_displayed(self, by_locator) -> bool:
         user = self._wait_for_element(by_locator)
